@@ -1,0 +1,12 @@
+{
+  "name": "random-phrase-service",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Kirill Malyshkin",
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "random-words": "^1.2.0",
+    "topper": "^1.0.1"
+  }
+}

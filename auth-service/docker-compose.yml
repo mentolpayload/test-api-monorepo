@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  auth_db:
+    image: mysql:latest
+    container_name: auth_db
+    restart: always
+    ports:
+      - ${DB_PORT}:${DB_PORT}
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+    volumes:
+      - ./.data/db:/var/lib/mysql
